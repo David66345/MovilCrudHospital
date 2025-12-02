@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio de Sesión"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/ed_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/b_ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingresar"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/azul_v3"
+        android:textColorHint="@color/white">
+
+    </Button>
+
+</LinearLayout>

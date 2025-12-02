@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/i_registro"
+        android:title="Registro"/>
+
+    <item
+        android:id="@+id/i_lista"
+        android:title="Lista"/>
+
+    <item
+        android:id="@+id/i_modificar"
+        android:title="Modificar"/>
+
+    <item
+        android:id="@+id/bote"
+        android:title="Eliminar"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/i_dlogin"
+        android:title="Cerrar sesión"
+        app:showAsAction="always"/>
+
+</menu>

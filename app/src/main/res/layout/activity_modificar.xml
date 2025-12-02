@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modificar">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/ed_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/ed_ap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido Paterno"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/ed_am"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido Materno"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/ed_dom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Domicilio"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/ed_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_lib"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Título del libro"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_aut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/ed_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editorial"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha del préstamo:"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_pres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AAAA - MM - DD"
+                    android:inputType="text|number"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de devolución:"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_devo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AAAA - MM - DD"
+                    android:inputType="text|number"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_ant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gris"
+            android:backgroundTint="@color/azul_v3"
+            android:text="Anterior" />
+
+        <Button
+            android:id="@+id/b_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gris"
+            android:backgroundTint="@color/azul_v3"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/b_sig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gris"
+            android:backgroundTint="@color/azul_v3"
+            android:text="Siguiente"/>
+    </LinearLayout>
+
+</LinearLayout>
